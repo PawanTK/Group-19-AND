@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "54039431707",
+    "project_id": "medicine-reminder-e3c68",
+    "storage_bucket": "medicine-reminder-e3c68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54039431707:android:4f71ee359d235845b6c6be",
+        "android_client_info": {
+          "package_name": "com.example.medapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54039431707-9bvc14onrheljet42o2ib0s836bcem1v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmqKSmq3nhkqwQU2g0jfwnq_6DfA-L-Rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54039431707-9bvc14onrheljet42o2ib0s836bcem1v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54039431707:android:233e0da5cd4ad0beb6c6be",
+        "android_client_info": {
+          "package_name": "com.example.medicinereminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54039431707-ebe5tadfd107aqjs3fq2qkfq7ru1jses.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.medicinereminder",
+            "certificate_hash": "c458cd9bcb61854f9aa3724d9627eddaf889f474"
+          }
+        },
+        {
+          "client_id": "54039431707-9bvc14onrheljet42o2ib0s836bcem1v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmqKSmq3nhkqwQU2g0jfwnq_6DfA-L-Rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54039431707-9bvc14onrheljet42o2ib0s836bcem1v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

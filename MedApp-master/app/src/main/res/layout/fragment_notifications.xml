@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color"
+    android:orientation="vertical"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/Toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/color"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:subtitleTextColor="#EDE9E9"
+                app:title="Buy Medicine Online"
+                app:titleMarginStart="90dp"
+                app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+                app:titleTextColor="#F3ECEC" />
+
+            <Button
+                android:id="@+id/mg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn_gradient"
+                android:text="@string/www_1mg_com"
+                app:backgroundTint="#4286f4" />
+
+            <Button
+                android:id="@+id/netmeds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn_1_gradiant"
+                android:text="@string/www_netmeds_com"
+                app:backgroundTint="#131212" />
+
+            <Button
+                android:id="@+id/gogomeds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn_gradient"
+                android:text="@string/www_gogomeds_com"
+                app:backgroundTint="#4286f4" />
+
+            <Button
+                android:id="@+id/mchemist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn_gradient"
+                android:text="@string/www_mchemist_com"
+                app:backgroundTint="#0C0C0C" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

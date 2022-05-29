@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color"
+    tools:context=".EditReminder">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/color"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="?attr/actionBarTheme"
+                    app:title="Edit Reminder"
+                    app:titleTextColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/doctorback" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Medicine Name"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/medname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:ems="10"
+                    android:hint="Medicine name"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Type"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioGroup
+                        android:id="@+id/rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <RadioButton
+                            android:id="@+id/pill1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/pill1"
+                            android:button="@android:color/transparent"
+                            android:onClick="onClickMethod"
+                            android:paddingRight="10dp" />
+
+                        <RadioButton
+                            android:id="@+id/pill2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/pill2"
+                            android:button="@android:color/transparent"
+                            android:onClick="onClickMethod"
+                            android:paddingRight="10dp" />
+
+                        <RadioButton
+                            android:id="@+id/pill3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/pill3"
+                            android:button="@android:color/transparent"
+                            android:checked="false"
+                            android:onClick="onClickMethod"
+                            android:paddingRight="10dp" />
+
+                        <RadioButton
+                            android:id="@+id/pill4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/pill4"
+                            android:button="@android:color/transparent"
+                            android:onClick="onClickMethod"
+                            android:paddingRight="10dp" />
+
+                        <RadioButton
+                            android:id="@+id/pill5"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/pill5"
+                            android:button="@android:color/transparent"
+                            android:onClick="onClickMethod"
+                            android:paddingRight="10dp" />
+
+                    </RadioGroup>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Time and Schedule"
+                    android:textColor="#040404"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/afterDinnerButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_1_gradiant"
+                            android:text="After Dinner"
+                            app:backgroundTint="@color/dot_light_screen1" />
+
+                        <Button
+                            android:id="@+id/afterBreakfastButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_1_gradiant"
+                            android:text="After Breakfast"
+                            app:backgroundTint="@color/dot_dark_screen3" />
+
+                        <Button
+                            android:id="@+id/afterLunchButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_1_gradiant"
+                            android:checkable="false"
+                            android:clickable="true"
+                            android:text="After Lunch"
+                            app:backgroundTint="@color/dot_light_screen1" />
+
+                        <Button
+                            android:id="@+id/beforeDinnerButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_1_gradiant"
+                            android:checkable="false"
+                            android:clickable="true"
+                            android:text="Before Dinner"
+                            app:backgroundTint="@color/dot_dark_screen3" />
+
+                        <Button
+                            android:id="@+id/beforeLunchButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_1_gradiant"
+                            android:checkable="false"
+                            android:clickable="true"
+                            android:text="Before Lunch"
+                            app:backgroundTint="@color/dot_light_screen1" />
+
+                        <Button
+                            android:id="@+id/beforeBreakfastButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_1_gradiant"
+                            android:checkable="false"
+                            android:clickable="true"
+                            android:text="Before Breakfast"
+                            app:backgroundTint="@color/dot_dark_screen3" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textview19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:text="Start Date"
+                        android:textColor="#090909"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:text="End Date"
+                        android:textColor="#090909"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/monthedit"
+                        android:layout_width="75dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_gradient"
+                        android:gravity="center"
+                        android:hint="Start date"
+                        android:inputType="number"
+                        android:paddingLeft="20dp"
+                        android:textColor="#2C2A2A"
+                        android:textStyle="bold"
+                        app:drawableLeftCompat="@drawable/calendar" />
+
+                    <TextView
+                        android:id="@+id/daily"
+                        android:layout_width="75dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_gradient"
+                        android:gravity="center"
+                        android:hint="End Date"
+                        android:paddingLeft="20dp"
+                        android:textColor="#2C2A2A"
+                        android:textStyle="bold"
+                        app:drawableLeftCompat="@drawable/calendar" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Week Days"
+                    android:textColor="#040404"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/mondayButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_1_gradiant"
+                            android:text="Monday"
+                            app:backgroundTint="@color/dot_light_screen1" />
+
+                        <Button
+                            android:id="@+id/tuesdayButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_1_gradiant"
+                            android:text="Tuesday"
+                            app:backgroundTint="@color/dot_dark_screen3" />
+
+                        <Button
+                            android:id="@+id/wednesdayButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_1_gradiant"
+                            android:checkable="false"
+                            android:clickable="true"
+                            android:text="Wednesday"
+                            app:backgroundTint="@color/dot_light_screen1" />
+
+                        <Button
+                            android:id="@+id/thursdayButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_1_gradiant"
+                            android:checkable="false"
+                            android:clickable="true"
+                            android:text="Thursday"
+                            app:backgroundTint="@color/dot_dark_screen3" />
+
+                        <Button
+                            android:id="@+id/fridayButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_1_gradiant"
+                            android:checkable="false"
+                            android:clickable="true"
+                            android:text="Friday"
+                            app:backgroundTint="@color/dot_light_screen1" />
+
+                        <Button
+                            android:id="@+id/saturdayButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_1_gradiant"
+                            android:checkable="false"
+                            android:clickable="true"
+                            android:text="Saturday"
+                            app:backgroundTint="@color/dot_dark_screen3" />
+
+                        <Button
+                            android:id="@+id/sundayButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_1_gradiant"
+                            android:checkable="false"
+                            android:clickable="true"
+                            android:text="Sunday"
+                            app:backgroundTint="@color/dot_light_screen1" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <Button
+                    android:id="@+id/done"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_1_gradiant"
+                    android:text="Done"
+                    app:backgroundTint="@color/dot_light_screen1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
