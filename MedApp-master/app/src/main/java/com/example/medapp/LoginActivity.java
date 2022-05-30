@@ -55,6 +55,7 @@ public class LoginActivity extends AppCompatActivity {
     GoogleSignInClient mGoogleSignInClient;
 
     @Override
+    //test 01
     protected void onStart() {
         super.onStart();
         FirebaseUser currentUser = firebaseAuth.getCurrentUser();
@@ -69,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 //sign in
-    
+
     private void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, RC_SIGN_IN);
@@ -98,7 +99,7 @@ public class LoginActivity extends AppCompatActivity {
             // Please refer to the GoogleSignInStatusCodes class reference for more information.
         }
     }
-
+//fire base
     private void firebaseAuthWithGoogle(String idToken, String name) {
         AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
         firebaseAuth.signInWithCredential(credential)
@@ -191,7 +192,7 @@ public class LoginActivity extends AppCompatActivity {
         firebaseAuth.signOut();
         mGoogleSignInClient.signOut();
     }
-
+//VALIDATION CHECK
     public void setValidation() {
         // Check for a valid email address.
         if (email.getText().toString().isEmpty()) {
