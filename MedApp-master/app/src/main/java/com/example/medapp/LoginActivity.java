@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.view.WindowManager;
@@ -45,6 +46,7 @@ import java.util.List;
 import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
+    //login page code
     private static final int RC_SIGN_IN = 9001;
     EditText email, password;
     boolean isEmailValid, isPasswordValid;
@@ -66,7 +68,8 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
-
+//sign in
+    
     private void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, RC_SIGN_IN);
