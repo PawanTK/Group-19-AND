@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.view.WindowManager;
@@ -45,6 +46,7 @@ import java.util.List;
 import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
+    //login page code
     private static final int RC_SIGN_IN = 9001;
     EditText email, password;
     boolean isEmailValid, isPasswordValid;
@@ -53,6 +55,7 @@ public class LoginActivity extends AppCompatActivity {
     GoogleSignInClient mGoogleSignInClient;
 
     @Override
+    //test 01
     protected void onStart() {
         super.onStart();
         FirebaseUser currentUser = firebaseAuth.getCurrentUser();
@@ -66,6 +69,7 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+//sign in
 
     private void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
@@ -95,7 +99,7 @@ public class LoginActivity extends AppCompatActivity {
             // Please refer to the GoogleSignInStatusCodes class reference for more information.
         }
     }
-
+//fire base
     private void firebaseAuthWithGoogle(String idToken, String name) {
         AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
         firebaseAuth.signInWithCredential(credential)
@@ -188,7 +192,7 @@ public class LoginActivity extends AppCompatActivity {
         firebaseAuth.signOut();
         mGoogleSignInClient.signOut();
     }
-
+//VALIDATION CHECK
     public void setValidation() {
         // Check for a valid email address.
         if (email.getText().toString().isEmpty()) {
